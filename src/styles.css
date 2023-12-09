@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CUSTOM STYLES */
+
+.container{
+    max-width: 1283px !important;
+}
+
+/* OPEN MENU STYLES */
+
+.mobile-navigation.active{
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    z-index: 99;
+}
+
+/* SLICK ARROWS */
+
+.slick-arrow::before{
+    content: "" !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 55px !important;
+    height: 93px !important;
+}
+
+.slick-prev::before{
+    background-image: url(../src/img/arrow-left.svg);
+    opacity: 1 !important;
+}
+
+.slick-prev,.slick-next{
+    top: 35% !important;
+}
+
+.slick-prev{
+    left: -80px !important;
+}
+
+.slick-next{
+    right: -40px !important;
+}
+
+.slick-next::before{
+    background-image: url(../src/img/arrow-right.svg);
+    opacity: 1 !important;
+    right: 80px !important;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* OPEN ACCORDION STYLES */
+
+@media(max-width:639px){
+    .mybox.active p{
+        height: 140px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .mybox.active img:nth-child(1){
+        display: none !important;
+    }
+    .mybox.active img:nth-child(2){
+        display: block !important;
+    }
+}
+
+/* OPEN ACCORDION STYLES */
